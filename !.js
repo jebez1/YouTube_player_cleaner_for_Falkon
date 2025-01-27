@@ -9,9 +9,9 @@ b=document.getElementsByTagName("video")[0]
 c=document.getElementsByClassName("ytp-chrome-bottom")[0]
 d=document.body.style
 let a
-b.onmousemove=()=>{d.cursor="initial"
+b.onmousemove=()=>{d.cursor=""
 clearTimeout(a)
 a=setTimeout(()=>d.cursor="none",500)}
-b.onmouseleave=()=>setTimeout(()=>d.cursor="initial",500)
+b.onmouseleave=()=>setTimeout(()=>d.cursor="",500)
 c.onmouseenter=()=>c.style.opacity=1
 c.onmouseleave=()=>c.style.opacity=0
