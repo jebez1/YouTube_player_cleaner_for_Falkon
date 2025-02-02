@@ -4,14 +4,15 @@
 document.getElementsByClassName("ytp-gradient-top")[0].remove()
 document.getElementsByClassName("ytp-chrome-top")[0].remove()
 document.getElementsByClassName("ytp-gradient-bottom")[0].remove()
-document.getElementsByTagName("video")[0].addEventListener("pause",()=>document.getElementsByClassName("ytp-bezel-text-hide")[0].remove(),{once:true})
 a=document.getElementsByTagName("video")[0]
-b=document.getElementsByClassName("ytp-chrome-bottom")[0]
-c=document.body.style
+a.addEventListener("pause",()=>document.getElementsByClassName("ytp-bezel-text-hide")[0].remove(),{once:true})
+b=document.body.style
+c=document.getElementsByClassName("ytp-chrome-bottom")[0]
+d=c.style
 let $
-a.onmousemove=()=>{c.cursor=""
+a.onmousemove=()=>{b.cursor=""
 clearTimeout($)
-$=setTimeout(()=>c.cursor="none",500)}
-a.onmouseleave=()=>setTimeout(()=>c.cursor="",500)
-b.onmouseenter=()=>b.style.opacity=1
-b.onmouseleave=()=>b.style.opacity=0
+$=setTimeout(()=>b.cursor="none",500)}
+a.onmouseleave=()=>setTimeout(()=>b.cursor="",500)
+c.onmouseenter=()=>d.opacity=1
+c.onmouseleave=()=>d.opacity=0
