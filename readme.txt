@@ -6,4 +6,4 @@ Too many requests.
 Please retry after approximately 86460 seconds.
 
 The Chrome extension:
-https://chromewebstore.google.com/detail/ijcmmbomhhkcobadafcbaffhepldgcpc
+https://chromewebstore.google.com/detail/perfect-youtube-player/jopoklhnoandpjbmlppaoikhkngofcdh
